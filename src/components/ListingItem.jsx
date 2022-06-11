@@ -4,8 +4,7 @@ import { ReactComponent as EditIcon } from "../assets/svg/editIcon.svg";
 import bedIcon from "../assets/svg/bedIcon.svg";
 import bathtubIcon from "../assets/svg/bathtubIcon.svg";
 
-function ListingItem({ listing, id }) {
-  const onDelete = () => {}
+function ListingItem({ listing, id, onEdit, onDelete }) {
   return (
     <li className="categoryListing">
       <Link
@@ -53,6 +52,7 @@ function ListingItem({ listing, id }) {
           onClick={() => onDelete(listing.id, listing.data)}
         />
       )}
+       {onEdit && <EditIcon className='editIcon' onClick={() => onEdit(id)} />}
     </li>
   );
 }
