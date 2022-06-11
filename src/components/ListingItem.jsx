@@ -13,7 +13,7 @@ function ListingItem({ listing, id }) {
         className="categoryListingLink"
       >
         <img
-          src={listing.imUrls[0]}
+          src={listing.imgUrls[0]}
           alt={listing.name}
           className="categoryListingImg"
         />

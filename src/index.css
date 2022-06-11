@@ -325,11 +325,22 @@ button {
 .swiper-pagination-bullet-active {
   background-color: #ffffff !important;
 }
-
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
 .swiperSlideDiv {
   position: relative;
   width: 100%;
   height: 100%;
+  background-size: cover;
+
 }
 
 .swiperSlideImg {
